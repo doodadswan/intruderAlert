@@ -3,8 +3,10 @@ input.onButtonPressed(Button.A, function () {
     control.reset()
 })
 radio.onReceivedString(function (receivedString) {
-    music.playMelody("C5 C5 B B C5 C5 B B ", 175)
-    basic.showString("INTRUDER!")
+    for (let index = 0; index < 4; index++) {
+        music.playMelody("C5 C5 B B C5 C5 B B ", 175)
+        basic.showString("INTRUDER!")
+    }
 })
 basic.forever(function () {
     pressure = pins.analogReadPin(AnalogPin.P0)
