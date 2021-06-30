@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
     control.reset()
 })
 radio.onReceivedString(function (receivedString) {
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 2; index++) {
         music.playMelody("C5 C5 B B C5 C5 B B ", 175)
         basic.showString("INTRUDER!")
     }
